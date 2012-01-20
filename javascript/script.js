@@ -4,7 +4,7 @@ brigida = {
   },
   OpenVideo : function(ev){
     $('.video-container').show();
-    $('.video-container').append('<iframe class="video" src="http://player.vimeo.com/video/33824912?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+    $('.video-container').append('<iframe class="video" src="http://player.vimeo.com/video/35192221?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
     ev.preventDefault();
   },
   CloseVideo : function(ev){
