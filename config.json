@@ -1,0 +1,13 @@
+{
+  "VERSION": "0.0.1",
+  "JSHINT_OPTS": { },
+  "JAVASCRIPT": {
+    "DIST_DIR": "dist",
+    "base": ["./javascript/app.js" ],
+    "secondary": [ ]
+  },
+  "CSS": {
+    "DIST_DIR": "dist",
+    "styles": [ ]
+  }
+}
