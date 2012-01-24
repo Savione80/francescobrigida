@@ -37,11 +37,6 @@
     };
     Resize.prototype.renderIe = function() {
       var crop, height, pageHeight, pageWidth, width;
-      width = void 0;
-      pageWidth = void 0;
-      height = void 0;
-      pageHeight = void 0;
-      crop = void 0;
       width = pageWidth = $(window).width();
       height = width * 0.58;
       pageHeight = $(window).height();
@@ -64,7 +59,6 @@
     };
     Resize.prototype.renderRealBrowser = function() {
       var height;
-      height = void 0;
       height = $(window).height();
       return $(".full-screen").css({
         height: height

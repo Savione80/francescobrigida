@@ -37,12 +37,6 @@ class Resize
 
   renderIe: ->
     
-    width = undefined
-    pageWidth = undefined
-    height = undefined
-    pageHeight = undefined
-    crop = undefined
-    
     width = pageWidth = $(window).width()
     height = width * 0.58
     pageHeight = $(window).height()
@@ -57,6 +51,5 @@ class Resize
 
   renderRealBrowser: ->
     
-    height = undefined
     height = $(window).height()
     $(".full-screen").css {height: height}
