@@ -7,13 +7,35 @@
 @import "compass/utilities";
 @import "compass/css3";
 @import "compass/typography";
-
-.box-shadow{
-  @include box-shadow(red 2px 2px 10px);
-}
+@import "compass/utilities/general/clearfix";
 
 a{
   @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
 }
-  
-  
+
+
+body{
+  overflow:hidden;
+  .content{
+    background:red;
+    margin:0 auto;
+    height:100%;
+    @include clearfix;
+    .column{
+      float:left;
+    }
+  }
+}
+
+
+
+
+
+
+@import "mediaquery.scss";
+@media only screen and (max-width : 1200px) {
+  @include media-thin;
+}
+@media only screen and (min-width : 1200px) {
+  @include media-wide;
+}

@@ -1,0 +1,16 @@
+@mixin media-thin{
+  .content{
+    width:980px;
+    .column{
+      width:200px;
+    }
+  }
+}
+@mixin media-wide{
+  .content{
+    width:1200px;
+    .column{
+      width:230px;
+    }
+  }
+}
