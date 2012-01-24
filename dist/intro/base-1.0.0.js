@@ -8919,11 +8919,6 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
     };
     Resize.prototype.renderIe = function() {
       var crop, height, pageHeight, pageWidth, width;
-      width = void 0;
-      pageWidth = void 0;
-      height = void 0;
-      pageHeight = void 0;
-      crop = void 0;
       width = pageWidth = $(window).width();
       height = width * 0.58;
       pageHeight = $(window).height();
@@ -8946,7 +8941,6 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
     };
     Resize.prototype.renderRealBrowser = function() {
       var height;
-      height = void 0;
       height = $(window).height();
       return $(".full-screen").css({
         height: height
