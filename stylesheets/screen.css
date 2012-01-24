@@ -103,25 +103,90 @@ body .content {
 /* line 24, ../sass/screen.scss */
 body .content .column {
   float: left;
+  position: relative;
+}
+/* line 27, ../sass/screen.scss */
+body .content .column .header {
+  position: fixed;
+  height: 20px;
+  background: #000;
+}
+/* line 35, ../sass/screen.scss */
+body .content .wrap-group .group a {
+  display: block;
+  position: relative;
+}
+/* line 38, ../sass/screen.scss */
+body .content .wrap-group .group a header, body .content .wrap-group .group a footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 46, ../sass/screen.scss */
+body .content .wrap-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 52, ../sass/screen.scss */
+body .wrap-scroller {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 20px;
+  height: 100%;
+}
+/* line 58, ../sass/screen.scss */
+body .wrap-scroller .scroller {
+  position: absolute;
+  width: 16px;
+  top: 0;
+  right: 4px;
+  background: #333;
+  height: 50px;
 }
 
 @media only screen and (max-width : 1200px) {
-  /* line 2, ../sass/mediaquery.scss */
+  /* line 26, ../sass/mediaquery.scss */
   .content {
     width: 980px;
   }
-  /* line 4, ../sass/mediaquery.scss */
+  /* line 28, ../sass/mediaquery.scss */
   .content .column {
-    width: 200px;
+    width: 196px;
+  }
+  /* line 30, ../sass/mediaquery.scss */
+  .content .column .header {
+    width: 196px;
+  }
+  /* line 35, ../sass/mediaquery.scss */
+  .content .column .wrap-group .group a {
+    height: 130px;
+  }
+  /* line 37, ../sass/mediaquery.scss */
+  .content .column .wrap-group .group a img {
+    width: 196px;
   }
 }
 @media only screen and (min-width : 1200px) {
-  /* line 10, ../sass/mediaquery.scss */
+  /* line 5, ../sass/mediaquery.scss */
   .content {
     width: 1200px;
   }
-  /* line 12, ../sass/mediaquery.scss */
+  /* line 7, ../sass/mediaquery.scss */
   .content .column {
-    width: 230px;
+    width: 240px;
+  }
+  /* line 9, ../sass/mediaquery.scss */
+  .content .column .header {
+    width: 240px;
+  }
+  /* line 14, ../sass/mediaquery.scss */
+  .content .column .wrap-group .group a {
+    height: 160px;
+  }
+  /* line 16, ../sass/mediaquery.scss */
+  .content .column .wrap-group .group a img {
+    width: 240px;
   }
 }

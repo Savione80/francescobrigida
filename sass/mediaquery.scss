@@ -1,16 +1,45 @@
-@mixin media-thin{
-  .content{
-    width:980px;
-    .column{
-      width:200px;
-    }
-  }
-}
+$column-media-wide:240px;
+$column-media-thin:196px;
+
 @mixin media-wide{
   .content{
     width:1200px;
     .column{
-      width:230px;
+      width:$column-media-wide;
+      .header{
+        width:$column-media-wide;
+      }
+      .wrap-group{
+        .group{
+          a{
+            height:160px;
+            img{
+              width:$column-media-wide;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin media-thin{
+  .content{
+    width:980px;
+    .column{
+      width:$column-media-thin;
+      .header{
+        width:$column-media-thin;
+      }
+      .wrap-group{
+        .group{
+          a{
+            height:130px;
+            img{
+              width:$column-media-thin;
+            }
+          }
+        }
+      }
     }
   }
 }

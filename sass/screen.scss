@@ -23,6 +23,45 @@ body{
     @include clearfix;
     .column{
       float:left;
+      position:relative;
+      .header{
+        position:fixed;
+        height:20px;
+        background:#000;
+      }
+    }
+    .wrap-group{
+      .group{
+        a{
+          display:block;
+          position:relative;
+          header, footer{
+            position:absolute;
+            top:0;
+            left:0;
+          }
+        }
+      }
+    }
+    .wrap-item{
+      position:absolute;
+      top:0;
+      left:0;
+    }
+  }
+  .wrap-scroller{
+    position:absolute;
+    right:0;
+    top:20px;
+    width:20px;
+    height:100%;
+    .scroller{
+      position:absolute;
+      width:16px;
+      top:0;
+      right:4px;
+      background:#333;
+      height:50px;
     }
   }
 }
