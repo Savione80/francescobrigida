@@ -67,15 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 11, ../sass/screen.scss */
-.box-shadow {
-  -moz-box-shadow: red 2px 2px 10px;
-  -webkit-box-shadow: red 2px 2px 10px;
-  -o-box-shadow: red 2px 2px 10px;
-  box-shadow: red 2px 2px 10px;
-}
-
-/* line 15, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 a {
   color: #0000cc;
 }
@@ -94,4 +86,42 @@ a:hover {
 /* line 27, ../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #cc00cc;
+}
+
+/* line 17, ../sass/screen.scss */
+body {
+  overflow: hidden;
+}
+/* line 19, ../sass/screen.scss */
+body .content {
+  background: red;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 24, ../sass/screen.scss */
+body .content .column {
+  float: left;
+}
+
+@media only screen and (max-width : 1200px) {
+  /* line 2, ../sass/mediaquery.scss */
+  .content {
+    width: 980px;
+  }
+  /* line 4, ../sass/mediaquery.scss */
+  .content .column {
+    width: 200px;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  /* line 10, ../sass/mediaquery.scss */
+  .content {
+    width: 1200px;
+  }
+  /* line 12, ../sass/mediaquery.scss */
+  .content .column {
+    width: 230px;
+  }
 }
